@@ -1,0 +1,19 @@
+<p id="modnumbers"></p>
+
+<script>
+const numbers = [];
+for ( var i = 1 ; i < 101 ; i++){
+numbers.push(i);
+}
+
+const newArr = numbers.map(myFunction);
+
+document.getElementById("modnumbers").innerHTML = newArr;
+
+function myFunction(num) {
+if(num%4 == 0 || num %7 == 0){
+  return num;
+}
+
+}
+</script>
